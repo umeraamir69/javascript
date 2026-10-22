@@ -1,5 +1,16 @@
 # Change Log
 
+## 6.41.0
+
+### Minor Changes
+
+- Add `hasMaximumLifetime` to `SessionResource` and `SessionWithActivitiesResource`. It is `false` for sessions without a maximum lifetime, whose `expireAt` and `abandonAt` now stay at Unix epoch zero instead of being replaced with the current time. ([#9871](https://github.com/clerk/javascript/pull/9871)) by [@swolfand](https://github.com/swolfand)
+
+### Patch Changes
+
+- Updated dependencies [[`0334b05`](https://github.com/clerk/javascript/commit/0334b0539bd7058a5e02520d519a20eefe84659c)]:
+  - @clerk/shared@4.42.0
+
 ## 6.40.0
 
 ### Minor Changes
